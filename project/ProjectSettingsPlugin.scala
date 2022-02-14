@@ -6,6 +6,6 @@ object ProjectSettingsPlugin extends AutoPlugin {
 
   override val projectSettings =
     Seq(
-      scalaVersion := "2.13.5"
+      scalaVersion := "2.13.8"
     )
 }
