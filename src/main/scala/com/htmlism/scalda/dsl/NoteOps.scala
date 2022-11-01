@@ -1,6 +1,6 @@
 package com.htmlism.scalda.dsl
 
-class NoteOps {
+class NoteOps:
   def `+` : NoteOps =
     ???
 
@@ -9,4 +9,3 @@ class NoteOps {
 
   def `/`(x: NoteOps): NoteOps =
     ???
-}

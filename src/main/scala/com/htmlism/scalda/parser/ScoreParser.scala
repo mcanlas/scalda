@@ -3,7 +3,7 @@ package com.htmlism.scalda.parser
 import atto.Atto._
 //import cats.syntax.all._
 
-object ScoreParser extends App {
+object ScoreParser extends App:
   val inputScore =
     """piano:
       |  o3
@@ -58,4 +58,3 @@ object ScoreParser extends App {
     score
       .parseOnly(inputScore)
   }
-}

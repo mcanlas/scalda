@@ -2,7 +2,7 @@ package com.htmlism.scalda
 
 import scala.language.postfixOps
 
-package object dsl {
+package object dsl:
   val a: NoteOps = ???
   val b: NoteOps = ???
   val c: NoteOps = ???
@@ -16,4 +16,3 @@ package object dsl {
   List(a +, b +, c -, d -, o <, o >, a / b / c)
 
   implicit class DurationOps(n: Int)
-}

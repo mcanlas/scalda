@@ -1,9 +1,8 @@
 package com.htmlism.scalda.dsl
 
-class OctaveOps {
+class OctaveOps:
   def `<` : OctaveOps =
     ???
 
   def `>` : OctaveOps =
     ???
-}
