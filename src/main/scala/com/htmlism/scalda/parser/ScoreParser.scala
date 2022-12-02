@@ -51,7 +51,7 @@ object ScoreParser extends App:
   val score =
     for {
       ins <- instrumentLabel
-      xs <- oneLine | multiLine
+      xs  <- oneLine | multiLine
     } yield (ins, xs)
 
   println {
