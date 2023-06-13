@@ -54,7 +54,6 @@ object ScoreParser extends App:
       xs  <- oneLine | multiLine
     } yield (ins, xs)
 
-  println {
+  println:
     score
       .parseOnly(inputScore)
-  }
