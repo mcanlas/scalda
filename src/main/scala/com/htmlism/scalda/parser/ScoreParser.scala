@@ -1,6 +1,6 @@
 package com.htmlism.scalda.parser
 
-import atto.Atto._
+import atto.Atto.*
 //import cats.syntax.all._
 
 object ScoreParser extends App:
