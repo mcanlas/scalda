@@ -24,11 +24,11 @@ object ScoreParser extends App:
     char('-') | char('+')
 
   val note =
-    for {
+    for
       let <- noteLetter
       len <- opt(noteLength)
       acc <- opt(accidental)
-    } yield let.toString + len.map(_.toString).getOrElse("") + acc.map(_.toString).getOrElse("")
+    yield let.toString + len.map(_.toString).getOrElse("") + acc.map(_.toString).getOrElse("")
 
   val octaveChange =
     char('<') | char('>')
@@ -49,10 +49,10 @@ object ScoreParser extends App:
     many(char('\n') ~> oneLine)
 
   val score =
-    for {
+    for
       ins <- instrumentLabel
       xs  <- oneLine | multiLine
-    } yield (ins, xs)
+    yield (ins, xs)
 
   println:
     score
