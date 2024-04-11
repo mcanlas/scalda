@@ -13,6 +13,8 @@ package object dsl:
 
   val o: OctaveOps = ???
 
-  List(a +, b +, c -, d -, o <, o >, a / b / c)
+  // dsl compile test
+  val _ =
+    List(a +, b +, c -, d -, o <, o >, a / b / c)
 
   implicit class DurationOps(n: Int)
