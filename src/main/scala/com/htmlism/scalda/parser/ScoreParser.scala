@@ -3,7 +3,7 @@ package com.htmlism.scalda.parser
 import atto.Atto.*
 //import cats.syntax.all._
 
-object ScoreParser extends App:
+object ScoreParser:
   val inputScore =
     """piano:
       |  o3
@@ -54,6 +54,7 @@ object ScoreParser extends App:
       xs  <- oneLine | multiLine
     yield (ins, xs)
 
-  println:
-    score
-      .parseOnly(inputScore)
+  def main(args: Array[String]): Unit =
+    println:
+      score
+        .parseOnly(inputScore)
